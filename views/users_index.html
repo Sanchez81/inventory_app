@@ -1,0 +1,41 @@
+<div class="reserveHomepage">
+<div class="container">
+
+  <div class="form-group">
+    <h2>Search For Users</h2>
+    <input type="text" class="form-control" placeholder="Search..." ng-model="userSearch">
+  </div>
+
+  <div class="row userSection">
+    <div class="userContainer col-md-3" ng-repeat="user in users | filter: userSearch">
+      <div class="userHeader">
+        <h1 class="userHeading">{{ user.firstName }} {{ user.lastName }}</h1>
+      </div>
+      <div class="userBody">
+        <p><strong>First Name:</strong> {{ user.firstName }}</p>
+        <p><strong>Last Name:</strong> {{ user.lastName }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Phone #:</strong> {{ user.phone }}</p>
+        <p><strong>DOB #:</strong> {{ user.dob | date: "mediumDate"}}</p>
+        <p><strong>CC# #:</strong> {{ user.creditCard.number }}</p>
+        <p><strong>CC Exp. #:</strong> {{ user.creditCard.expiration | date: "mediumDate"}}</p>
+        <p><strong>CC Security #:</strong> {{ user.creditCard.security }}</p>
+        <p><strong>Billing Address:</strong> {{ user.billingAddress.address1B }}</p>
+        <p><strong>Billing Address:</strong> {{ user.billingAddress.address2B }}</p>
+        <p><strong>Billing City:</strong> {{ user.billingAddress.cityB }}</p>
+        <p><strong>Billing State:</strong> {{ user.billingAddress.stateB }}</p>
+        <p><strong>Billing Zip:</strong> {{ user.billingAddress.zipB }}</p>
+        <p><strong>Shipping Address:</strong> {{ user.shippingAddress.address1S }}</p>
+        <p><strong>Shipping Address:</strong> {{ user.shippingAddress.address2S }}</p>
+        <p><strong>Shipping City:</strong> {{ user.shippingAddress.cityS }}</p>
+        <p><strong>Shipping State:</strong> {{ user.shippingAddress.stateS }}</p>
+        <p><strong>Shipping Zip:</strong> {{ user.shippingAddress.zipS }}</p>
+
+        <button class="btn btn-primary" ui-sref="showUser({ id: {{ user.id }} })">View</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>

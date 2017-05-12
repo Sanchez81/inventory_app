@@ -1,0 +1,115 @@
+<div class="container">
+
+  <h1 class="hero">{{ userHeading }}</h1>
+
+  <div class="row">
+    <h3 class="sectionHeader">Personal Information</h3>
+
+    <div class="form-group col-md-6">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" placeholder="First Name" ng-model="user.firstName">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" placeholder="Last Name" ng-model="user.lastName">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" placeholder="first.lastName@gmail.com" ng-model="user.email">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="phoneNumber">Phone</label>
+      <input type="text" class="form-control" placeholder="(555)-555-5555" ng-model="user.phone">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="DOB">Date Of Birth</label>
+      <input type="date" class="form-control" ng-model="user.dob">
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="sectionHeader">Billing Address</h3>
+
+    <div class="form-group col-md-12">
+      <label for="streetAddressOne">Street Address</label>
+      <input type="text" class="form-control" placeholder="100 Main Street" ng-model="user.billingAddress.address1B">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="streetAddressTwo">Address (optional)</label>
+      <input type="text" class="form-control" placeholder="Apt #" ng-model="user.billingAddress.address2B">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="city">City</label>
+      <input type="text" class="form-control" placeholder="Los Angeles" ng-model="user.billingAddress.cityB">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="state">State</label>
+      <input type="text" class="form-control" placeholder="CA" ng-model="user.billingAddress.stateB">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="zip">Zip</label>
+      <input type="text" class="form-control" placeholder="12345" ng-model="user.billingAddress.zipB">
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="sectionHeader">Shipping Address</h3>
+
+    <div class="form-group col-md-12">
+      <label for="streetAddressOne">Street Address</label>
+      <input type="text" class="form-control" placeholder="100 Main Street" ng-model="user.shippingAddress.address1S">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="streetAddressTwo">Address (optional)</label>
+      <input type="text" class="form-control" placeholder="Apt #" ng-model="user.shippingAddress.address2S">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="city">City</label>
+      <input type="text" class="form-control" placeholder="Los Angeles" ng-model="user.shippingAddress.cityS">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="state">State</label>
+      <input type="text" class="form-control" placeholder="CA" ng-model="user.shippingAddress.stateS">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="zip">Zip</label>
+      <input type="text" class="form-control" placeholder="12345" ng-model="user.shippingAddress.zipS">
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="sectionHeader">Billing Information</h3>
+
+    <div class="form-group col-md-12">
+      <label for="cardNumber">Credit Card Number</label>
+      <input type="text" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx" ng-model="user.creditCard.number">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="cardType">Card Exp. Date</label>
+      <input type="date" class="form-control" ng-model="user.creditCard.expiration">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="securityCode">Security Code</label>
+      <input type="text" class="form-control" placeholder="XXX" ng-model="user.creditCard.security">
+    </div>
+
+    <button ng-click="addUser()" class="btn btn-primary btn-lg pull-right cbtn" ng-show="submitButton">Submit</button>
+    <button ng-click="saveUser()" class="btn btn-success btn-lg pull-right cbtn" ng-show="saveButton">Save</button>
+  </div>
+
+
+</div><!-- Container End -->

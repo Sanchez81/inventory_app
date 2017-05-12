@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: #ff0000;
+}
+
+.reserveHomepage {
+  background: url("../assets/NESW-Insta-Profile.jpg") center center no-repeat;
+  background-size: cover;
+  /*background: url("http://i.imgur.com/LqElBI8.jpg");*/
+  /*background-color: #edece3;*/
+  /*background: linear-gradient(black, white);*/
+}
+
+.heroHeader {
+  padding: 250px 0;
+}
+.homeHero {
+  font-weight: 700;
+}
+
+.userContainer {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: grey 1px solid;
+  padding-bottom: 15px;
+  margin-bottom: 60px;
+}
+
+/*Nav*/
+.customNav {
+  height: 100px;
+  background-color: #dcdbd2;
+
+}
+
+.customNavItems a {
+  text-decoration: none;
+  color: #ff0000;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.customNavItems a:hover {
+  color: #828176;
+}
+
+
+.customNavItems ul {
+  display: inline;
+}
+.customNavItems li {
+  display: inline;
+}
+
+/*.customNavItems a:hover {
+  text-decoration: none;
+  opacity: .7;
+}*/
+
+/*.customNavItems li {
+  display: inline;
+}
+
+.hero {
+  font-size: 55px;
+  text-align: center;
+  margin: 35px;
+}
+*/
+/*.sectionHeader {
+  border-bottom: 2px black solid;
+  margin: 20px 0;
+  padding: 10px;
+  padding-left: 0;
+  color: #0000a9;
+  font-weight: 600;
+}
+
+.cbtn {
+  margin-bottom: 25px;
+}*/
+
+/*Users*/
+
+/*.userHeader {
+  background-color: #bbb;
+}
+
+.userHeading {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.userBody {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 40px;
+}*/
+
+/*tickets*/
+
+/*.ticketHeader {
+  background-color: #bbb;
+}
+
+.ticketHeading {
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.ticketBody {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+*/
+
+/*show*/
+
+/*.showSection {
+  clear: both;
+}
+
+.showHeader {
+  background-color: #bbb;
+}
+
+.showHeading {
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.showBody {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+*/
+
+
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+}
